@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--заголовки-->
+    <h1>Це заголовок 1</h1>
+    <h2>Це заголовок 2</h2>
+    <h3>Це заголовок 3</h3>
+    <h4>Це заголовок 4</h4>
+    <h5>Це заголовок 5</h5>
+    <h6>Це заголовок 6</h6>
+
+    <!--параграфи-->
+    <p>Це параграф.</p>
+    <p>Це інший параграф.</p>
+
+    <!--посилання-->
+    <p>HTML посилання визначаються за допомогою тега a:</p>
+    <a href="https://w3schoolsua.github.io/">Це посилання</a>
+
+    <!--зображення-->
+    <p>HTML зображення визначаються за допомогою тега img:</p>
+    <img src="../якесьфото" alt="фото" width="120" height="150">
+
+    <!--таблиці-->
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+    </table>
+
+    <!--кнопки-->
+    <p>HTML кнопки визначаються за допомогою тега button:</p>
+    <button>Тицни мене!</button>
+
+    <!--списки-->
+    <h2>Невпорядкований список HTML</h2>
+    <ul>
+    <li>Кава</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+    </ul>
+
+    <h2>Впорядкований список HTML</h2>
+    <ol>
+    <li>Кава</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+    </ol>
+
+    <!--форми-->
+    <form action='/action_page.html'>
+        <fieldset>
+          <legend>Особиста інформація:</legend>
+          Ім’я:<br>
+          <input type='text' name='firstname' value='Mickey'><br>
+          Прізвище:<br>
+          <input type='text' name='lastname' value='Mouse'><br><br>
+          <input type='submit' value='Надіслати'>
+        </fieldset>
+    </form>
+
+    <form>
+        <input type='radio' name='gender" value='male' checked> Чоловіча<br>
+       <input type='radio' name='gender' value='female'> Жіноча<br>
+       <input type='radio' name='gender' value='other'> Інше
+    </form>
+
+</body>
+</html>
