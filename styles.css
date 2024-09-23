@@ -1,0 +1,149 @@
+h1 {
+    height: 100px;
+    width: 50%;
+    background-color: powderblue;
+    margin: auto;
+    outline-style: outset;
+    outline: 5px solid red;
+    outline-offset: 15px;
+  }
+  
+  .radio {
+    background-color: lightblue;
+    opacity: 0.5;
+    padding: 25px 50px 75px 100px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  
+  p.a {
+     border-left: 6px solid red;
+     background-color: lightgrey;
+     color: blue;
+  }
+
+  p {
+    background: rgba(0, 128, 0, 0.3);
+    border-style: dotted dashed solid double;
+    border-width: medium;
+    border-color: red green blue yellow;
+    border-radius: 8px;
+    margin: 25px 50px;
+  }
+
+  body {
+    background-image: url("images/фон.jpg");
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  }
+  
+  a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+    cursor:pointer;
+  }
+
+  ul {
+    background: #3399ff;
+    padding: 10px;
+  }
+
+  ul li {
+    background: #cce5ff;
+    padding: auto;
+    margin: 5px;
+    margin-left: 35px;
+  }
+
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .anim {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  .rec {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 0;}
+    to {left: 300px;}
+  }

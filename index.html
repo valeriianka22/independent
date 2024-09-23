@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,6 +14,11 @@
     </style>
 </head>
 <body>
+  <i class="material-icons">cloud</i>
+  <i class="material-icons">favorite</i>
+  <i class="material-icons">attachment</i>
+  <i class="material-icons">computer</i>
+  <i class="material-icons">traffic</i>
     <!--заголовки-->
     <h1>Це заголовок 1</h1>
     <h2>Це заголовок 2</h2>
@@ -20,36 +27,90 @@
     <h5>Це заголовок 5</h5>
     <h6>Це заголовок 6</h6>
 
+    <div class="tooltip">Наведіть на мене
+      <span class="tooltiptext">Текст підказки</span>
+    </div>
+
     <!--параграфи-->
     <p>Це параграф.</p>
     <p>Це інший параграф.</p>
 
+    <div class="anim"></div>
+
+    <div class="rec" id="div1">linear</div>
+    <div class="rec" id="div2">ease</div>
+    <div class="rec" id="div3">ease-in</div>
+    <div class="rec" id="div4">ease-out</div>
+    <div class="rec" id="div5">ease-in-out</div>
+
     <!--посилання-->
-    <p>HTML посилання визначаються за допомогою тега a:</p>
+    <p class="a">HTML посилання визначаються за допомогою тега a:</p>
     <a href="https://w3schoolsua.github.io/">Це посилання</a>
 
     <!--зображення-->
     <p>HTML зображення визначаються за допомогою тега img:</p>
-    <img src="../якесьфото" alt="фото" width="120" height="150">
+    <img src="images/якесьфото.jpg" alt="фото" width="120" height="150">
 
     <!--таблиці-->
-    <table style="width:100%">
+    <div class="table" style="overflow-x:auto;">
+      <table id="customers">
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
         </tr>
         <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
         </tr>
         <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
         </tr>
-    </table>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+      </table>
+    </div>
 
     <!--кнопки-->
     <p>HTML кнопки визначаються за допомогою тега button:</p>
@@ -82,11 +143,13 @@
         </fieldset>
     </form>
 
-    <form>
+    <div class="radio">
+      <form>
         <input type='radio' name='gender" value='male' checked> Чоловіча<br>
-       <input type='radio' name='gender' value='female'> Жіноча<br>
-       <input type='radio' name='gender' value='other'> Інше
-    </form>
+        <input type='radio' name='gender' value='female'> Жіноча<br>
+        <input type='radio' name='gender' value='other'> Інше
+      </form>
+    </div>
 
 </body>
 </html>
