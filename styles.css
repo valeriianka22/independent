@@ -22,7 +22,7 @@ h1 {
      color: blue;
   }
 
-  p {
+  p.a {
     background: rgba(0, 128, 0, 0.3);
     border-style: dotted dashed solid double;
     border-width: medium;
@@ -37,8 +37,80 @@ h1 {
     background-position: right top;
     background-attachment: fixed;
   }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
   
-  a:link, a:visited {
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  a.one:link, a.one:visited {
     background-color: white;
     color: black;
     border: 2px solid green;
@@ -48,18 +120,18 @@ h1 {
     display: inline-block;
   }
   
-  a:hover, a:active {
+  a.one:hover, a.one:active {
     background-color: green;
     color: white;
     cursor:pointer;
   }
 
-  ul {
+  ul.one {
     background: #3399ff;
     padding: 10px;
   }
 
-  ul li {
+  ul li.one {
     background: #cce5ff;
     padding: auto;
     margin: 5px;
@@ -146,4 +218,114 @@ h1 {
   @keyframes mymove {
     from {left: 0;}
     to {left: 300px;}
+  }
+
+  .newspaper {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+  }
+  
+  h2.b {
+    column-span: all;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  ul.two {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li.two {
+    float: left;
+  }
+  
+  li.two a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.two a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h2.shad {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+
+  div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  div.container {
+    padding: 10px;
+  }
+
+  div.c {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  div.c:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+
+  span.test2 {
+    writing-mode: vertical-rl;
   }
